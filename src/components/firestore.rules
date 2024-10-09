@@ -1,0 +1,14 @@
+service cloud.firestore {
+  match /databases/{database}/documents {
+    // Allow read access to the products collection for everyone
+    match /products/{document=**} {
+      allow read: if true; // Allows read access to all users
+      allow write: if false; // Prevents write access
+    }
+    
+    // Deny access to all other collections/documents
+    match /{document=**} {
+      allow read, write: if false; // No access to other documents
+    }
+  }
+}
