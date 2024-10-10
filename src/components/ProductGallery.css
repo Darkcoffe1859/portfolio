@@ -1,0 +1,46 @@
+/* src/components/ProductGallery.css */
+.product-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Responsive grid layout */
+  gap: 20px; /* Space between grid items */
+  padding: 20px; /* Padding around the gallery */
+}
+
+.product-card {
+  background-color: #fff; /* White background for product cards */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow effect */
+  overflow: hidden; /* To avoid content overflow */
+  text-align: center; /* Center-align text */
+}
+
+.product-image {
+  width: 100%; /* Make image responsive */
+  height: 150px; /* Fixed height for images */
+  object-fit: cover; /* Ensure image covers the area */
+}
+
+.product-title {
+  font-size: 16px; /* Adjust font size */
+  margin: 10px 0; /* Margin above and below title */
+}
+
+.product-price {
+  font-weight: bold; /* Make price bold */
+  margin: 5px 0; /* Margin above and below price */
+}
+
+.add-to-cart {
+  background-color: #007bff; /* Bootstrap primary color */
+  color: white; /* White text */
+  border: none; /* Remove border */
+  border-radius: 5px; /* Rounded button */
+  padding: 10px 15px; /* Padding for button */
+  cursor: pointer; /* Pointer cursor on hover */
+  transition: background-color 0.3s; /* Smooth transition */
+}
+
+.add-to-cart:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+}
+

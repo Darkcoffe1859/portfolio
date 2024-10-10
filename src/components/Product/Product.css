@@ -1,0 +1,49 @@
+/* src/components/Product/Product.css */
+.product-card {
+  width: 180px; /* Card width */
+  padding: 15px;
+  background-color: #ffffff; /* White background for the card */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow */
+  text-align: center; /* Centered content */
+  transition: transform 0.2s; /* Smooth hover effect */
+}
+
+.product-card:hover {
+  transform: translateY(-5px); /* Lift up slightly on hover */
+}
+
+.product-image {
+  width: 100%; /* Full width of the container */
+  border-radius: 8px; /* Rounded corners */
+}
+
+.product-info {
+  margin: 10px 0; /* Space between info and button */
+}
+
+.product-name {
+  font-size: 1.1em; /* Slightly larger font */
+  color: #333333; /* Darker color */
+}
+
+.product-price {
+  font-size: 0.9em;
+  color: #888888; /* Subdued color for price */
+}
+
+.add-to-cart-button {
+  background-color: #4E9CFA; /* Primary color */
+  color: white; /* White text */
+  padding: 8px 12px; /* Padding inside button */
+  border: none; /* Remove default border */
+  border-radius: 5px; /* Rounded corners */
+  cursor: pointer; /* Pointer on hover */
+  font-weight: bold; /* Bold text */
+  transition: background-color 0.3s ease;
+}
+
+.add-to-cart-button:hover {
+  background-color: #3a7dc0; /* Darker shade on hover */
+}
+

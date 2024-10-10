@@ -1,8 +1,9 @@
+/* src/components/Footer/Footer.css */
 .footer {
-    background-color: #282c34;
-    color: #ffffff;
-    padding: 20px;
+    background-color: #333;
+    color: white;
     text-align: center;
+    padding: 20px;
 }
 
 .footer-content {
@@ -11,50 +12,37 @@
     flex-wrap: wrap;
 }
 
-.footer-links, .footer-socials, .footer-newsletter {
-    margin: 10px;
-    flex: 1 1 200px; /* Allow responsive resizing */
-}
-
 .footer-links ul {
-    list-style: none;
+    list-style-type: none;
     padding: 0;
 }
 
-.footer-links a,
-.footer-socials a {
-    color: #ffffff;
+.footer-links a, .footer-socials a {
+    color: white;
     text-decoration: none;
+    margin: 5px 0;
 }
 
-.footer-links a:hover,
-.footer-socials a:hover {
-    text-decoration: underline;
+.footer-socials a {
+    display: flex;
+    align-items: center; /* Align icon and text vertically */
+    margin: 10px 0; /* Add vertical spacing between social links */
+}
+
+.footer-socials .social-icon {
+    margin-right: 8px; /* Add space between the icon and text */
+    width: 20px; /* Set a consistent width for the icons */
+    height: 20px; /* Set a consistent height for the icons */
 }
 
 .footer-newsletter form {
     display: flex;
     justify-content: center;
-    margin-top: 10px;
 }
 
 .footer-newsletter input {
-    padding: 5px;
+    padding: 10px;
     margin-right: 5px;
-    border: none;
-    border-radius: 5px;
-}
-
-.footer-newsletter button {
-    padding: 5px 10px;
-    background-color: #61dafb;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-.footer-newsletter button:hover {
-    background-color: #21a1f1;
 }
 
 .footer-bottom {

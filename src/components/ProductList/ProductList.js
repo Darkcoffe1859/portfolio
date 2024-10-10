@@ -1,21 +1,22 @@
 // src/components/ProductList/ProductList.js
 import React from 'react';
-import './ProductList.css';
+import Product from '../Product/Product'; // Ensure Product component exists
+import './ProductList.css'; // Import CSS for styling
 
-const ProductList = ({ products = [] }) => {
-    return (
-        <div className="product-list">
-            {products.map(product => (
-                <div className="product-item" key={product.id}>
-                    <h2>{product.Name}</h2>
-                    <p>{product.Description}</p>
-                    <p>Price: ${product.price}</p>
-                    <img src={product.imageUrl} alt={product.Name} style={{ width: '200px', height: 'auto' }} />
-                    <button>Add to Cart</button>
-                </div>
-            ))}
-        </div>
-    );
+const ProductList = () => {
+  const sampleProducts = [
+    { id: 1, name: 'Product 1', price: 10.0, image: 'https://via.placeholder.com/150' },
+    { id: 2, name: 'Product 2', price: 20.0, image: 'https://via.placeholder.com/150' },
+    { id: 3, name: 'Product 3', price: 15.0, image: 'https://via.placeholder.com/150' },
+  ];
+
+  return (
+    <div className="product-list">
+      {sampleProducts.map((product) => (
+        <Product key={product.id} product={product} />
+      ))}
+    </div>
+  );
 };
 
 export default ProductList;

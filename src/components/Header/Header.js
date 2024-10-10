@@ -1,12 +1,12 @@
 // src/components/Header/Header.js
 import React from 'react';
-import { Link, NavLink } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import './Header.css';
 
 const Header = () => {
     return (
         <header className="header">
-            <h1>My E-Commerce Site</h1>
+            <h1>First Store</h1>
             <nav>
                 <ul>
                     <li><NavLink exact to="/" activeClassName="active-link">Home</NavLink></li>

@@ -1,15 +1,15 @@
 // src/pages/Products.js
 import React from 'react';
-import ProductList from '../components/ProductList/ProductList';
+import ProductGallery from '../components/ProductGallery';
 
-function Products() {
+const Products = () => {
   return (
     <div>
-      <h2>Our Products</h2>
-      <ProductList /> {/* This component fetches and displays the products */}
+      <h1>Beauty Product Gallery</h1>
+      <ProductGallery />
     </div>
   );
-}
+};
 
 export default Products;
 

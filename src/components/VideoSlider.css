@@ -1,0 +1,15 @@
+/* src/components/VideoSlider.css */
+.video-slider {
+  margin: 20px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  overflow: hidden; /* This will make sure video fits nicely */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.video-slider video {
+  border-radius: 10px;
+}
+
