@@ -2,7 +2,7 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Home from './pages/Home';
-import Cart from './pages/cart'; // Ensure Cart is properly imported
+import Cart from './pages/Cart'; // Ensure Cart is properly imported
 import Login from './pages/Login';
 import Signup from './pages/Signup'; // Add Signup import
 import Products from './pages/Products';
@@ -21,7 +21,7 @@ function App() {
           <Route path="/login" element={<Login />} />
           <Route path="/signup" element={<Signup />} /> {/* Add Signup route */}
           <Route element={<PrivateRoute />}>
-            <Route path="/cart" element={<cart/>} /> {/* Corrected here */}
+            <Route path="/cart" element={<Cart/>} /> {/* Corrected here */}
             <Route path="/products" element={<Products />} />
           </Route>
         </Routes>
