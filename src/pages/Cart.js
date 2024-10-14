@@ -1,4 +1,4 @@
-// src/pages/Cart.js
+// src/pages/cart.js
 import React from 'react';
 import { useCart } from '../context/CartContext'; // This imports the useCart hook
 import './cart.css'; // Ensure this CSS file is created
@@ -34,5 +34,6 @@ const Cart = () => {
     );
 };
 
-export default cart;
+export default Cart; // Fix here
+
 
